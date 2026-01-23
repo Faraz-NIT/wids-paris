@@ -1,0 +1,190 @@
+/* ==================== SECTION ==================== */
+
+.agenda-section {
+  padding: 4rem 16px;
+  background: linear-gradient(180deg, #f6faf8, #ffffff);
+}
+
+.agenda-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.agenda-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: var(--forest-900);
+}
+
+/* ==================== TIMELINE ==================== */
+
+.agenda-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.agenda-timeline::before {
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* ==================== ROW ==================== */
+
+.agenda-row {
+  display: grid;
+  grid-template-columns: 110px 50px 1fr; /* ⬅️ wider middle column */
+  align-items: flex-start;
+}
+
+
+/* ==================== TIME ==================== */
+
+.agenda-time {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4b5563;
+  text-align: right;
+  padding-top: 0.6rem;
+  padding-right: 10px; /* ⬅️ creates space before dot */
+}
+
+/* ==================== DOT ==================== */
+
+.agenda-dot {
+  width: 16px;           /* slightly bigger dot */
+  height: 16px;
+  border-radius: 50%;
+  background: var(--forest-900);
+  margin-top: 0.75rem;
+  justify-self: left; /* ⬅️ perfect alignment */
+}
+
+
+/* ==================== CARD ==================== */
+
+.agenda-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.agenda-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.3rem;
+  color: var(--forest-900);
+}
+
+.agenda-card p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #374151;
+}
+
+.agenda-card ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1rem;
+}
+
+.agenda-card li {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #374151;
+}
+/* HEADER LAYOUT */
+
+.agenda-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+/* LOGOS – FREE, BIG, UNBOUNDED */
+
+.agenda-logos-inline {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.agenda-logos-inline img {
+  height: 52px;        /* BIGGER */
+  max-width: 90px;
+  object-fit: contain;
+
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* TEXT */
+
+.agenda-text h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem;
+  color: var(--forest-900);
+}
+
+.agenda-text p,
+.agenda-text li {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* ==================== LOGO BADGES ==================== */
+
+/* LOGO CARDS */
+
+.agenda-badges img {
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+
+  background: white;
+  padding: 8px;
+
+  border-radius: 12px; /* soft square */
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agenda-badges img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.22);
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+  .agenda-row {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .agenda-timeline::before {
+    display: none;
+  }
+
+  .agenda-dot {
+    display: none;
+  }
+
+  .agenda-time {
+    text-align: left;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}
