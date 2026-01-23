@@ -1,5 +1,4 @@
 import './App.css'
-import HeroCarousel from "./components/HeroCarousel.tsx"
 import Hero from "./components/Hero.tsx";
 import Venue from "./components/Venue";
 
