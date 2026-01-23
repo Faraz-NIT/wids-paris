@@ -1,0 +1,158 @@
+/* ==================== HERO ==================== */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  overflow: hidden;
+  background-color: #ffffff; /* fallback */
+}
+
+/* Translucent background image */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+background-image: url("/images/hero-bg.jpg");
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.35;              /* 👈 translucency */
+  filter: saturate(1.1) blur(1px); /* optional premium feel */
+
+  z-index: 0;
+}
+
+/* Ensures content stays above bg */
+.hero-container {
+  position: relative;
+  z-index: 1;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+/* ==================== LEFT ==================== */
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--forest-900);
+  margin-bottom: 1.2rem;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4f6f61;
+  max-width: 520px;
+  margin-bottom: 2.4rem;
+}
+
+.hero-cta {
+  display: flex;
+}
+
+/* ==================== REGISTER BUTTON ==================== */
+
+.btn-register {
+  padding: 0.85rem 2.6rem;
+  border-radius: 18px; /* squircle */
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    var(--forest-500),
+    var(--forest-700)
+  );
+
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  
+  transition: all 0.25s ease;
+}
+
+.btn-register:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(22, 63, 42, 0.4);
+}
+
+/* ==================== MOSAIC ==================== */
+
+.hero-mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: 100px;
+  gap: 12px;
+  justify-content: end;
+}
+
+.tile {
+  border-radius: 8px;
+}
+
+/* Color blocks */
+.tile-green {
+  background: #9be7b0;
+}
+
+.tile-blue {
+  background: #00a8d6;
+}
+
+.tile-yellow {
+  background: #ffd400;
+}
+
+/* Image tiles */
+.tile.img {
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Replace these with your real images */
+.img-1 { background-image: url("/images/hero1.jpg"); }
+.img-2 { background-image: url("/images/hero2.jpg"); }
+.img-3 { background-image: url("/images/hero3.jpg"); }
+.img-4 { background-image: url("/images/hero4.jpg"); }
+.img-5 { background-image: url("/images/hero5.png"); }
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-mosaic {
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 4rem 16px;
+  }
+
+  .hero-mosaic {
+    grid-template-columns: repeat(3, 90px);
+    grid-auto-rows: 90px;
+  }
+}
