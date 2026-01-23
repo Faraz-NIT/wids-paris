@@ -943,3 +943,66 @@ body {
     font-size: 1rem;
   }
 }
+/* ==================== FOOTER ==================== */
+
+.footer {
+  background: var(--forest-900);
+  color: #ffffff;
+  padding-top: 2rem;
+}
+
+/* Existing content */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: var(--forest-100);
+}
+
+.footer-section p,
+.footer-section a {
+  color: #d8e6df;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== LEGAL STRIP ==================== */
+
+.footer-legal {
+  background: var(--forest-700);
+  padding: 1.2rem 24px;
+  width: 100%;
+}
+
+.footer-legal p {
+  margin: 0.35rem auto;
+  max-width: 1200px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #e6f2ec;
+  text-align: center;
+}
+
+.footer-legal strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+.footer-copy {
+  margin-top: 1.2rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+

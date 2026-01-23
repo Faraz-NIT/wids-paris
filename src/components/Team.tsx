@@ -2,6 +2,11 @@ import "./Team.css";
 
 const Team = () => {
   const teamMembers = [
+     {
+      name: "Marie-Victoire Stiquel",
+      role: "Responsable grands comptes at emlyon",
+      image: "/images/team-member-3.jpg"
+    },
     {
       name: "Ekaterina Dimitrieva",
       role: "Coordinator",
@@ -11,11 +16,6 @@ const Team = () => {
       name: "Mary Sheeba Theodore",
       role: "Coordinator",
       image: "/images/team-member-2.jpg"
-    },
-    {
-      name: "Emma Wilson",
-      role: "Communications",
-      image: "/images/team-member-3.jpg"
     },
     {
       name: "Lisa Garcia",
