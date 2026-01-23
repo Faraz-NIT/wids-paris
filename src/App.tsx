@@ -2,6 +2,7 @@ import './App.css'
 import Hero from "./components/Hero.tsx";
 import Venue from "./components/Venue";
 import Agenda from "./components/Agenda";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -173,7 +174,9 @@ function App() {
      
       
 
-      
+      {/* Team Section */}
+      <Team/>
+
       {/* Footer */}
       <footer className="footer">
         <div className="container">
