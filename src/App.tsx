@@ -36,8 +36,8 @@ function App() {
       <ul className="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#highlights">Highlights</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#time">Schedule</a></li>
+        <li><a href="#schedule">Speakers</a></li>
         <li><a href="#register">Register</a></li>
       </ul>
     </div>
@@ -70,16 +70,11 @@ function App() {
 
             {/* Hover card */}
             <div className="schedule-card-hover">
-              <h3>1ère conférence</h3>
+              <h3>About</h3>
               <p className="hover-text">
-                Expert talk on leadership, technology strategy, and innovation in data-driven organisations.
+                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
               </p>
-              <div className="schedule-card-hover">
-    <h3>1ère conférence</h3>
-    <p className="hover-text">
-      Expert talk on leadership, technology strategy, and innovation in data-driven organisations.
-    </p>
-  </div>
+              
             </div>
           </div>
 
@@ -97,10 +92,10 @@ function App() {
             <p className="speaker-name">Justine Nerce</p>
             <p className="speaker-role">CEO at ARTEFACT</p>
             <div className="schedule-card-hover">
-    <h3>1ère conférence</h3>
-    <p className="hover-text">
-      Expert talk on leadership, technology strategy, and innovation in data-driven organisations.
-    </p>
+    <h3>About</h3>
+              <p className="hover-text">
+                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
+              </p>
   </div>
           </div>
           <div className="schedule-card">
@@ -109,27 +104,13 @@ function App() {
             <p className="speaker-name">Jacqueline Lefevre Lopez</p>
             <p className="speaker-role">Senior Data Scientist at UBISOFT</p>
             <div className="schedule-card-hover">
-    <h3>1ère conférence</h3>
-    <p className="hover-text">
-      Expert talk on leadership, technology strategy, and innovation in data-driven organisations.
-    </p>
+    <h3>About</h3>
+              <p className="hover-text">
+                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
+              </p>
   </div>
           </div>
-          <div className="schedule-card">
-  <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/pauline.jpg)'}}></div>
-  <h3>1ère conférence</h3>
-  <h2 className="speaker-name">Pauline de Malherbe</h2>
-  <p className="speaker-role">Business Leader, specialising in Technology, currently CMO</p>
-
-
-  {/* Hover card */}
-  <div className="schedule-card-hover">
-    <h3>1ère conférence</h3>
-    <p className="hover-text">
-      Expert talk on leadership, technology strategy, and innovation in data-driven organisations.
-    </p>
-  </div>
-</div>
+         
 
         </div>
       </div>
@@ -144,10 +125,10 @@ function App() {
             <p className="speaker-name">Marion JULLIEN Ségolène</p>
             <p className="speaker-role">Insights & Data Leader, Global Tech Lead Governance and Responsible AI at 3DS</p>
             <div className="schedule-card-hover">
-    <h3>1ère conférence</h3>
-    <p className="hover-text">
-      Expert talk on leadership, technology strategy, and innovation in data-driven organisations.
-    </p>
+    <h3>About</h3>
+              <p className="hover-text">
+                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
+              </p>
   </div>
           </div>
           <div className="schedule-card">
@@ -169,10 +150,10 @@ function App() {
             <p className="speaker-name">TBA</p>
             <p className="speaker-role">Speaker Title & Company</p>
             <div className="schedule-card-hover">
-    <h3>1ère conférence</h3>
-    <p className="hover-text">
-      Expert talk on leadership, technology strategy, and innovation in data-driven organisations.
-    </p>
+    <h3>About</h3>
+              <p className="hover-text">
+                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
+              </p>
   </div>
           </div>
         </div>
@@ -195,69 +176,10 @@ function App() {
   </div>
 </section>
 
-      {/* About Section */}
-      <section id="about" className="about">
-        <div className="container">
-          <h2 className="section-title">About the Event</h2>
-          <p className="section-description">
-            Join us for an inspiring three-day event celebrating women breaking barriers in data science. 
-            Connect with industry leaders, learn cutting-edge techniques, and grow your professional network.
-          </p>
-          <div className="about-grid">
-            <div className="about-card">
-              <div className="card-icon">👥</div>
-              <h3>500+ Attendees</h3>
-              <p>Connect with professionals and students from around the world</p>
-            </div>
-            <div className="about-card">
-              <div className="card-icon">🎤</div>
-              <h3>50+ Speakers</h3>
-              <p>Learn from industry experts and thought leaders</p>
-            </div>
-            <div className="about-card">
-              <div className="card-icon">🚀</div>
-              <h3>20+ Workshops</h3>
-              <p>Hands-on training in emerging data science topics</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Highlights Section */}
-      <section id="highlights" className="highlights">
-        <div className="container">
-          <h2 className="section-title">Event Highlights</h2>
-          <div className="highlights-grid">
-            <div className="highlight-item">
-              <h3>Keynote Addresses</h3>
-              <p>Inspiring talks from leading women in AI, ML, and data science</p>
-            </div>
-            <div className="highlight-item">
-              <h3>Panel Discussions</h3>
-              <p>Real-world challenges and solutions from experienced professionals</p>
-            </div>
-            <div className="highlight-item">
-              <h3>Networking Sessions</h3>
-              <p>Connect with peers, mentors, and potential collaborators</p>
-            </div>
-            <div className="highlight-item">
-              <h3>Hands-On Labs</h3>
-              <p>Practical training with latest tools and technologies</p>
-            </div>
-            <div className="highlight-item">
-              <h3>Career Fair</h3>
-              <p>Explore opportunities at top companies</p>
-            </div>
-            <div className="highlight-item">
-              <h3>Social Events</h3>
-              <p>Casual meetups and community building activities</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Schedule Section */}
-      <section id="schedule" className="schedule">
+      <section id="time" className="schedule">
         <div className="container">
           <h2 className="section-title">Schedule</h2>
           <div className="schedule-grid">
@@ -322,51 +244,7 @@ function App() {
         </div>
       </section>
 
-      {/* Speakers Section */}
-    {/* Speakers Section */}
-<section id="speakers" className="speakers">
-  <div className="container">
-    <h2 className="section-title">Featured Speakers</h2>
-    <div className="speakers-grid">
-      <div className="speaker-card">
-        <div className="speaker-avatar" style={{backgroundImage: 'url(/images/speaker1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
-        <h3>Imène Brigui, PhD</h3>
-        <p className="speaker-title">Head of the MSc in DSAIS at emlyon business school</p>
-        <p className="speaker-bio">Leading data science education and research initiatives, fostering the next generation of data-driven leaders.</p>
-      </div>
-      <div className="speaker-card">
-        <div className="speaker-avatar" style={{backgroundImage: 'url(/images/speaker2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
-        <h3>Isabelle Hilali</h3>
-        <p className="speaker-title">Founder and CEO of Datacraft</p>
-        <p className="speaker-bio">Pioneering innovative data solutions and building a thriving community of data professionals.</p>
-      </div>
-      <div className="speaker-card">
-        <div className="speaker-avatar" style={{backgroundImage: 'url(/images/speaker3.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
-        <h3>Chafika Chettaoui, PhD</h3>
-        <p className="speaker-title">Chief Data Officer at Axa France</p>
-        <p className="speaker-bio">Driving data strategy and digital transformation at one of Europe's leading insurance companies.</p>
-      </div>
-      <div className="speaker-card">
-        <div className="speaker-avatar" style={{backgroundImage: 'url(/images/speaker4.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
-        <h3>Cristina Oprean, PhD</h3>
-        <p className="speaker-title">Head of Data Science at Accor Paris</p>
-        <p className="speaker-bio">Leading data-driven initiatives in hospitality, leveraging AI for customer experience optimization.</p>
-      </div>
-      <div className="speaker-card">
-        <div className="speaker-avatar" style={{backgroundImage: 'url(/images/speaker5.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
-        <h3>Maud Picq</h3>
-        <p className="speaker-title">Director of Sectorial Data Strategies Entity at Capgemini Invent</p>
-        <p className="speaker-bio">Consulting on enterprise data strategies and building next-generation analytics capabilities.</p>
-      </div>
-      <div className="speaker-card">
-        <div className="speaker-avatar" style={{backgroundImage: 'url(/images/speaker6.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
-        <h3>Ons Nefla, PhD</h3>
-        <p className="speaker-title">Consultant Data Engineer at Talan</p>
-        <p className="speaker-bio">Designing and implementing scalable data infrastructure solutions for enterprise clients.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      
 
       
       {/* Footer */}
