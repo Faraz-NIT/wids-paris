@@ -3,7 +3,7 @@ import Hero from "./components/Hero.tsx";
 import Venue from "./components/Venue";
 import Agenda from "./components/Agenda";
 import Team from "./components/Team";
-import Ambassador from "./components/ambassador.tsx";
+import Ambassador from "./components/Ambassador";
 
 
 function App() {
