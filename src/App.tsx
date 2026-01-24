@@ -69,7 +69,7 @@ function App() {
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/pauline.jpg)'}}></div>
             
             <h1 className="speaker-name">Pauline de Malherbe</h1>
-            <p className="speaker-role">Business Leader, specialising in Technology, currently CMO</p>
+            <p className="speaker-role">Business Leader, specialising in Technology, currently CMO at SFR</p>
 
             {/* Hover card */}
             <div className="schedule-card-hover">

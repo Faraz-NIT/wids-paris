@@ -26,6 +26,16 @@ const Team = () => {
       name: "Claire Martin",
       role: "Logistics",
       image: "/images/team-member-5.jpg"
+    },
+    {
+      name: "Lisa Garcia",
+      role: "Sponsorship",
+      image: "/images/team-member-4.jpg"
+    },
+    {
+      name: "Claire Martin",
+      role: "Logistics",
+      image: "/images/team-member-5.jpg"
     }
   ];
 
