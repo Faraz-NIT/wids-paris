@@ -314,7 +314,7 @@ body {
 }
 
 .speaker-name {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--forest-700);
   margin: 0.2rem 0;
@@ -837,7 +837,7 @@ body {
 .footer {
   background: #1a1a1a;
   color: white;
-  padding: 3rem 20px 1.5rem;
+  padding: 3rem 10px 1.5rem;
 }
 
 .footer-content {
@@ -959,7 +959,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.footer-section h4 {
+.footer-section h3 {
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
   color: var(--forest-100);
@@ -968,6 +968,7 @@ body {
 .footer-section p,
 .footer-section a {
   color: #d8e6df;
+  font-weight: 500;
   font-size: 0.95rem;
   line-height: 1.6;
   text-decoration: none;
