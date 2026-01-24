@@ -38,7 +38,12 @@ function App() {
   <nav className="navbar">
     <div className="nav-container">
       <ul className="nav-menu">
-        <li><a href="#about">About</a></li>
+        <li><a
+    href="https://www.widsconference.org"
+    target="_blank"
+    rel="noopener noreferrer"
+    
+  >About</a></li>
         <li><a href="#agenda-section">Schedule</a></li>
         <li><a href="#schedule">Speakers</a></li>
         <li><a href="#register">Register</a></li>
