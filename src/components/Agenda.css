@@ -40,10 +40,9 @@
 
 .agenda-row {
   display: grid;
-  grid-template-columns: 110px 50px 1fr; /* ⬅️ wider middle column */
+  grid-template-columns: 110px 50px 1fr;
   align-items: flex-start;
 }
-
 
 /* ==================== TIME ==================== */
 
@@ -53,118 +52,129 @@
   color: #4b5563;
   text-align: right;
   padding-top: 0.6rem;
-  padding-right: 10px; /* ⬅️ creates space before dot */
+  padding-right: 10px;
 }
 
 /* ==================== DOT ==================== */
 
 .agenda-dot {
-  width: 16px;           /* slightly bigger dot */
+  width: 16px;
   height: 16px;
   border-radius: 50%;
   background: var(--forest-900);
   margin-top: 0.75rem;
-  justify-self: left; /* ⬅️ perfect alignment */
+  justify-self: left;
 }
-
 
 /* ==================== CARD ==================== */
 
 .agenda-card {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(8px);
-  border-radius: 14px;
-  padding: 1.2rem 1.4rem;
+  border-radius: 15px;
+  padding: 0.9rem 1.2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .agenda-card h3 {
+  margin: 0 0 0.2rem;      /* ⬇️ tighter */
   font-size: 1.05rem;
-  margin: 0 0 0.3rem;
+  font-weight: 700;
   color: var(--forest-900);
 }
 
 .agenda-card p {
-  font-size: 0.9rem;
   margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.3; 
   color: #374151;
 }
 
-.agenda-card ul {
-  margin: 0.5rem 0 0;
-  padding-left: 1rem;
-}
-
-.agenda-card li {
-  font-size: 0.85rem;
-  margin-bottom: 0.3rem;
-  color: #374151;
-}
-/* HEADER LAYOUT */
+/* ==================== HEADER LAYOUT ==================== */
 
 .agenda-card-header {
   display: flex;
-  align-items: flex-start;
-  gap: 1.4rem;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-/* LOGOS – FREE, BIG, UNBOUNDED */
+/* ==================== SINGLE LOGO ==================== */
 
 .agenda-logos-inline {
   display: flex;
-  gap: 1rem;
   align-items: center;
   flex-shrink: 0;
 }
 
+/* ==================== NON-PANEL LOGOS ==================== */
+
 .agenda-logos-inline img {
-  height: 52px;        /* BIGGER */
-  max-width: 90px;
+  height: 52px;        /* ⬆️ bigger */
+  max-height: 64px;
+  width: auto;
+
   object-fit: contain;
 
   background: none;
   padding: 0;
   border-radius: 0;
   box-shadow: none;
+
+  flex-shrink: 0;
 }
 
-/* TEXT */
 
-.agenda-text h3 {
-  font-size: 1.05rem;
-  margin: 0 0 0.25rem;
+
+/* ==================== PANEL STACK ==================== */
+
+.panel-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+.panel-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* ==================== PANEL LOGOS (CLEAN) ==================== */
+
+.panel-row img {
+  height: 48px;
+  max-height: 48px;
+  width: auto;
+
+  object-fit: contain;
+
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  flex-shrink: 0;
+}
+
+.panel-text strong {
+  display: block;
+  font-size: 0.85rem;
   color: var(--forest-900);
 }
 
-.agenda-text p,
-.agenda-text li {
-  font-size: 0.9rem;
+.panel-text p {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
   color: #374151;
 }
 
-/* ==================== LOGO BADGES ==================== */
+/* ==================== OPTIONAL DIVIDER ==================== */
 
-/* LOGO CARDS */
-
-.agenda-badges img {
-  height: 56px;
-  width: 56px;
-  object-fit: contain;
-
-  background: white;
-  padding: 8px;
-
-  border-radius: 12px; /* soft square */
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.panel-row:not(:last-child) {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
-
-.agenda-badges img:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.22);
-}
-
 
 /* ==================== RESPONSIVE ==================== */
 
@@ -187,4 +197,32 @@
     padding: 0;
     font-size: 0.8rem;
   }
+}
+
+@media (max-width: 480px) {
+  .panel-row {
+    gap: 0.8rem;
+  }
+
+  .panel-row img {
+    height: 44px;
+    width: 44px;
+  }
+}
+/* ==================== PANEL AS MULTIPLE CARDS ==================== */
+
+.agenda-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.panel-title {
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  color: var(--forest-900);
+}
+
+.panel-card {
+  padding: 0.8rem 1.2rem; /* slightly tighter */
 }

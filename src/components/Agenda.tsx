@@ -1,93 +1,166 @@
 import "./Agenda.css";
 
-const Agenda = () => {
-  const agendaItems = [
-    {
-      time: "5:00 – 5:20 pm",
-      logo: "/images/sfr-logo.png",
-      speaker: "Pauline de Malherbe",
-      role: "Business Leader & Director, Product Procurement and alumna"
-    },
-    {
-      time: "5:20 – 5:40 pm",
-      logo: "/images/artefact-logo.jpg",
-      speaker: "Justine Nerce",
-      role: "CEO and alumna of the school"
-    },
-    {
-      time: "5:40 – 6:10 pm",
-      logos: [
-        { name: "UBISOFT", image: "/images/ubisoft-logo.png" },
-        { name: "AXA", image: "/images/axa-logo.png" },
-        { name: "DASSAULT", image: "/images/dassault-logo.png" }
-      ],
-      speaker: "Panel discussion",
-      panelists: [
-        { name: "Jacqueline Lefèvre Lopez", role: "Senior Data Scientist" },
-        { name: "Cristina OPREAN", role: "Head of AI Governance & R&D" },
-        { name: "Marion JULLIEN", role: "Strategic Client Insights & Data Leader" }
-      ]
-    },
-    {
-      time: "6:10 – 6:30 pm",
-      logo: "/images/aws-logo.png",
-      speaker: "Ségolène Dessertine-Panhard",
-      role: "Global Tech Lead – Responsible AI"
-    },
-    {
-      time: "6:30 – 7:00 pm",
-      speaker: "SFR Data Challenge Award Ceremony"
-    },
-    {
-      time: "7:00 – 8:30 pm",
-      speaker: "Networking Cocktail Reception"
-    }
-  ];
+/* ==================== TYPES ==================== */
 
+type Panelist = {
+  name: string;
+  role: string;
+};
+
+type CompanyPanel = {
+  name: string;
+  logo: string;
+  panelist: Panelist;
+};
+
+type AgendaItem =
+  | {
+      time: string;
+      speaker: string;
+      logo: string;
+      role?: string;
+      companies?: never;
+    }
+  | {
+      time: string;
+      speaker: string;
+      companies: CompanyPanel[];
+      logo?: never;
+      role?: never;
+    }
+  | {
+      time: string;
+      speaker: string;
+      logo?: never;
+      role?: never;
+      companies?: never;
+    };
+
+/* ==================== DATA ==================== */
+
+const agendaItems: AgendaItem[] = [
+  {
+    time: "5:00 – 5:20 pm",
+    logo: "/images/sfr-logo.png",
+    speaker: "Pauline de Malherbe",
+    role: "Business Leader & Director, Product Procurement and alumna"
+  },
+  {
+    time: "5:20 – 5:40 pm",
+    logo: "/images/artefact-logo.jpg",
+    speaker: "Justine Nerce",
+    role: "CEO and alumna of the school"
+  },
+  {
+    time: "5:40 – 6:10 pm",
+    speaker: "Panel Discussion",
+    companies: [
+      {
+        name: "UBISOFT",
+        logo: "/images/ubisoft-logo.png",
+        panelist: {
+          name: "Jacqueline Lefèvre Lopez",
+          role: "Senior Data Scientist"
+        }
+      },
+      {
+        name: "AXA",
+        logo: "/images/axa-logo.png",
+        panelist: {
+          name: "Cristina OPREAN",
+          role: "Head of AI Governance & R&D"
+        }
+      },
+      {
+        name: "DASSAULT SYSTEMES",
+        logo: "/images/dassault-logo.jpg",
+        panelist: {
+          name: "Marion JULLIEN",
+          role: "Strategic Client Insights & Data Leader"
+        }
+      }
+    ]
+  },
+  {
+    time: "6:10 – 6:30 pm",
+    logo: "/images/aws-logo.png",
+    speaker: "Ségolène Dessertine-Panhard",
+    role: "Global Tech Lead – Responsible AI"
+  },
+  {
+    time: "6:30 – 7:00 pm",
+    speaker: "SFR Data Challenge Award Ceremony"
+  },
+  {
+    time: "7:00 – 8:30 pm",
+    speaker: "Networking Cocktail Reception"
+  }
+];
+
+/* ==================== COMPONENT ==================== */
+
+const Agenda = () => {
   return (
     <section className="agenda-section">
       <div className="agenda-container">
         <h2 className="agenda-title">Schedule</h2>
 
         <div className="agenda-timeline">
-          {agendaItems.map((item, index) => (
-            <div key={index} className="agenda-row">
-  <div className="agenda-time">{item.time}</div>
+          {agendaItems.map((item, index) => {
+            /* ================= PANEL DISCUSSION ================= */
+            if (item.companies) {
+              return (
+                <div key={index} className="agenda-row">
+                  <div className="agenda-time">{item.time}</div>
+                  <div className="agenda-dot" />
 
-  <div className="agenda-dot" />
+                  <div className="agenda-card-group">
+                    <h3 className="panel-title">{item.speaker}</h3>
 
-  <div className="agenda-card">
-    <div className="agenda-card-header">
-      {(item.logo || item.logos) && (
-        <div className="agenda-logos-inline">
-          {item.logo && <img src={item.logo} alt="" />}
-          {item.logos &&
-            item.logos.map((l, i) => (
-              <img key={i} src={l.image} alt={l.name} />
-            ))}
-        </div>
-      )}
+                    {item.companies.map((c, i) => (
+                      <div key={i} className="agenda-card panel-card">
+                        <div className="agenda-card-header">
+                          <div className="agenda-logos-inline">
+                            <img src={c.logo} alt={c.name} />
+                          </div>
 
-      <div className="agenda-text">
-        <h3>{item.speaker}</h3>
+                          <div className="agenda-text">
+                            <h3>{c.panelist.name}</h3>
+                            <p>{c.panelist.role}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
 
-        {item.panelists ? (
-          <ul>
-            {item.panelists.map((p, i) => (
-              <li key={i}>
-                <strong>{p.name}</strong> — {p.role}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          item.role && <p>{item.role}</p>
-        )}
-      </div>
-    </div>
-  </div>
-</div>
+            /* ================= NORMAL ITEMS ================= */
+            return (
+              <div key={index} className="agenda-row">
+                <div className="agenda-time">{item.time}</div>
+                <div className="agenda-dot" />
 
-          ))}
+                <div className="agenda-card">
+                  {item.logo ? (
+                    <div className="agenda-card-header">
+                      <div className="agenda-logos-inline">
+                        <img src={item.logo} alt="" />
+                      </div>
+
+                      <div className="agenda-text">
+                        <h3>{item.speaker}</h3>
+                        {item.role && <p>{item.role}</p>}
+                      </div>
+                    </div>
+                  ) : (
+                    <h3>{item.speaker}</h3>
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
