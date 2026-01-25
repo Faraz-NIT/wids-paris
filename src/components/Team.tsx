@@ -8,7 +8,7 @@ const Team = () => {
       image: "/images/team-member-3.jpg"
     },
     {
-      name: "Ekaterina Dimitrieva",
+      name: "Ekaterina Dmitrieva",
       role: "Coordinator",
       image: "/images/team-member-1.jpg"
     },
