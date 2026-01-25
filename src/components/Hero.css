@@ -47,6 +47,12 @@ background-image: url("/images/hero-bg.jpg");
   color: var(--forest-900);
   margin-bottom: 1.2rem;
 }
+.hero-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--forest-900);
+  margin-bottom: 1.2rem;
+}
 
 .hero-content p {
   font-size: 1.05rem;

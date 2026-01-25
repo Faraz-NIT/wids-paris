@@ -7,6 +7,7 @@ const Hero = () => {
 
         <div className="hero-content">
           <h1>WiDS @ Emlyon Paris</h1>
+          <h2>10th February 2026 | Emlyon Business School, Paris Campus</h2>
           <p>
             Cultivating the next generation of Data Science and AI leaders by
             providing resources for upskilling, networking, mentorship, and

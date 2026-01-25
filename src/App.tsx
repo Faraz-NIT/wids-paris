@@ -14,11 +14,18 @@ function App() {
   {/* Floating Logos */}
   
   <div className="logo-row">
-    <img
-      src="/emlyon-logo.png"
-      alt="EM Lyon Business School"
-      className="emlyon-logo"
-    />
+    <a
+  href="https://www.em-lyon.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
+    src="/emlyon-logo.png"
+    alt="EM Lyon Business School"
+    className="emlyon-logo"
+  />
+</a>
+
     {/* WiDS Logo */}
       <img
         src="/wids-logo.png"
@@ -227,6 +234,10 @@ function App() {
       <div className="footer-section">
         <h3>Contact</h3>
         <p>Email: wids@em-lyon.com</p>
+      </div>
+      <div className="footer-section">
+        <h3>Venue</h3>
+        <p>Emlyon Business School, 15 Boulevard Diderot, 75012 Paris</p>
       </div>
     </div>
   </div>
