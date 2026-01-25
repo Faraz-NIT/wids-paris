@@ -646,10 +646,9 @@ body {
 }
 
 /* ==================== SCHEDULE SECTION ==================== */
-.schedule {
-  padding: 5rem 20px;
-  background: #f8f9fa;
-}
+/* ==================== SPEAKERS (SCHEDULE) SECTION ==================== */
+
+
 
 .schedule-grid {
   display: grid;
@@ -1005,5 +1004,38 @@ body {
   margin-top: 1.2rem;
   font-size: 0.85rem;
   opacity: 0.85;
+}
+
+/* ==================== NAVBAR HOVER (NO TSX CHANGE) ==================== */
+
+.nav-menu a {
+  color: var(--forest-700);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease, transform 0.25s ease;
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+  color: var(--forest-300);
+  transform: translateY(-2px);
+}
+
+/* Animated underline */
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--forest-300), var(--forest-500));
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
 }
 
