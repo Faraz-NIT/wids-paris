@@ -135,6 +135,18 @@ function App() {
               </p>
   </div>
           </div>
+           <div className="schedule-card">
+            <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/bianca.jpg)'}}></div>
+           
+            <p className="speaker-name">Bianca ROATIS</p>
+            <p className="speaker-role"> Director of Experience and Client Relations at Suez</p>
+            <div className="schedule-card-hover">
+    <h3>About</h3>
+              <p className="hover-text">
+                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
+              </p>
+  </div>
+          </div>
           <div className="schedule-card">
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/cristina.jpg)'}}></div>
             

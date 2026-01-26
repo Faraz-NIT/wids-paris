@@ -78,6 +78,14 @@ const agendaItems: AgendaItem[] = [
           name: "Marion JULLIEN",
           role: "Strategic Client Insights & Data Leader"
         }
+      },
+      {
+        name: "SUEZ",
+        logo: "/images/suez-logo.png",
+        panelist: {
+          name: "Bianca Roatis",
+          role: "Director of Experience and Client Relations"
+        }
       }
     ]
   },
