@@ -15,7 +15,13 @@ const Hero = () => {
           </p>
 
           <div className="hero-cta">
-            <button className="btn-register">Register Now </button>
+            <button
+  className="btn-register"
+  onClick={() => window.open("https://forms.office.com/e/3KJgxBZx7i?origin=lprLink", "_blank")}
+>
+  Register Now
+</button>
+
           </div>
         </div>
 

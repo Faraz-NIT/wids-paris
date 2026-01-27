@@ -53,7 +53,16 @@ function App() {
   >About</a></li>
         <li><a href="#agenda-section">Schedule</a></li>
         <li><a href="#schedule">Speakers</a></li>
-        <li><a href="#register">Register</a></li>
+        <li>
+  <a
+    href="https://forms.office.com/e/3KJgxBZx7i?origin=lprLink "
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Register
+  </a>
+</li>
+
       </ul>
     </div>
   </nav>
@@ -203,7 +212,15 @@ function App() {
           
           <li><a href="#agenda-section">Schedule</a></li>
           <li><a href="#schedule">Speakers</a></li>
-          <li><a href="#register">Register</a></li>
+          <li>
+  <a
+    href="https://forms.office.com/e/3KJgxBZx7i?origin=lprLink "
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Register
+  </a>
+</li>
         </ul>
       </div>
 
