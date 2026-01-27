@@ -84,13 +84,7 @@ function App() {
             <p className="speaker-role">Business Leader & CMO, specializing in Technology and alumna of the school at SFR</p>
 
             {/* Hover card */}
-            <div className="schedule-card-hover">
-              <h3>About</h3>
-              <p className="hover-text">
-                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
-              </p>
-              
-            </div>
+            
           </div>
 
           
@@ -106,12 +100,7 @@ function App() {
             
             <p className="speaker-name">Justine Nerce</p>
             <p className="speaker-role">CEO at ARTEFACT</p>
-            <div className="schedule-card-hover">
-    <h3>About</h3>
-              <p className="hover-text">
-                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
-              </p>
-  </div>
+            
           </div>
          
          
@@ -128,48 +117,28 @@ function App() {
            
             <p className="speaker-name">Jacqueline Lefevre Lopez</p>
             <p className="speaker-role">Senior Data Scientist at UBISOFT</p>
-            <div className="schedule-card-hover">
-    <h3>About</h3>
-              <p className="hover-text">
-                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
-              </p>
-  </div>
+            
           </div>
            <div className="schedule-card">
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/bianca.jpg)'}}></div>
            
             <p className="speaker-name">Bianca Roatis</p>
             <p className="speaker-role"> Director of Experience and Client Relations at Suez</p>
-            <div className="schedule-card-hover">
-    <h3>About</h3>
-              <p className="hover-text">
-                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
-              </p>
-  </div>
+           
           </div>
           <div className="schedule-card">
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/cristina.jpg)'}}></div>
             
             <p className="speaker-name">Cristina Oprean</p>
             <p className="speaker-role">Head of AI, Governance at AXA</p>
-            <div className="schedule-card-hover">
-    <h3>About</h3>
-              <p className="hover-text">
-                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
-              </p>
-  </div>
+            
           </div>
           <div className="schedule-card">
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/marion.jpg)'}}></div>
           
             <p className="speaker-name">Marion Jullien</p>
             <p className="speaker-role">Insights & Data Leader, Global Tech Lead Governance and Responsible AI at 3DS</p>
-            <div className="schedule-card-hover">
-    <h3>About</h3>
-              <p className="hover-text">
-                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
-              </p>
-  </div>
+            
           </div>
           
         </div>
@@ -184,12 +153,7 @@ function App() {
             
             <p className="speaker-name">Ségolène Dessertine-Panhard</p>
             <p className="speaker-role">Global Tech Lead Governance and Responsible AI at AWS</p>
-            <div className="schedule-card-hover">
-    <h3>About</h3>
-              <p className="hover-text">
-                As CMO of SFR Business, she drives product strategy and growth across enterprise and SMB segments, leading digital marketing, data, and BI to deliver innovative, sustainable solutions. With 15+ years in telecom, she has led global initiatives across Mobile, Broadband, Cybersecurity, and IoT, fostering collaboration and innovation across regions
-              </p>
-  </div>
+            
           </div>
         </div>
       </div>
