@@ -67,7 +67,7 @@ const agendaItems: AgendaItem[] = [
         name: "AXA",
         logo: "/images/axa-logo.png",
         panelist: {
-          name: "Cristina OPREAN",
+          name: "Cristina Oprean",
           role: "Head of AI Governance & R&D"
         }
       },
@@ -75,7 +75,7 @@ const agendaItems: AgendaItem[] = [
         name: "DASSAULT SYSTEMES",
         logo: "/images/3ds.png",
         panelist: {
-          name: "Marion JULLIEN",
+          name: "Marion Jullien",
           role: "Strategic Client Insights & Data Leader"
         }
       },
