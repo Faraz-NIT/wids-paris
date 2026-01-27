@@ -4,7 +4,7 @@ const Team = () => {
   const teamMembers = [
      {
       name: "Marie-Victoire Stiquel",
-      role: "Responsable grands comptes at emlyon",
+      role: "Business Developer",
       image: "/images/team-member-3.jpg"
     },
     {
