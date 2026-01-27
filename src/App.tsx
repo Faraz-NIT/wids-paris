@@ -138,7 +138,7 @@ function App() {
            <div className="schedule-card">
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/bianca.jpg)'}}></div>
            
-            <p className="speaker-name">Bianca ROATIS</p>
+            <p className="speaker-name">Bianca Roatis</p>
             <p className="speaker-role"> Director of Experience and Client Relations at Suez</p>
             <div className="schedule-card-hover">
     <h3>About</h3>
@@ -162,7 +162,7 @@ function App() {
           <div className="schedule-card">
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/marion.jpg)'}}></div>
           
-            <p className="speaker-name">Marion JULLIEN</p>
+            <p className="speaker-name">Marion Jullien</p>
             <p className="speaker-role">Insights & Data Leader, Global Tech Lead Governance and Responsible AI at 3DS</p>
             <div className="schedule-card-hover">
     <h3>About</h3>
