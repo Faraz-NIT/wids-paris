@@ -81,7 +81,7 @@ function App() {
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/pauline.jpg)'}}></div>
             
             <h1 className="speaker-name">Pauline de Malherbe</h1>
-            <p className="speaker-role">Business Leader, specialising in Technology, currently CMO at SFR</p>
+            <p className="speaker-role">Business Leader & CMO, specializing in Technology and alumna of the school at SFR</p>
 
             {/* Hover card */}
             <div className="schedule-card-hover">
@@ -183,7 +183,7 @@ function App() {
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/dessertine.jpg)'}}></div>
             
             <p className="speaker-name">Ségolène Dessertine-Panhard</p>
-            <p className="speaker-role">Corporate Strategic Planning - Strategic Client at AWS</p>
+            <p className="speaker-role">Global Tech Lead Governance and Responsible AI at AWS</p>
             <div className="schedule-card-hover">
     <h3>About</h3>
               <p className="hover-text">

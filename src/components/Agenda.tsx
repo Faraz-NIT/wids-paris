@@ -73,7 +73,7 @@ const agendaItems: AgendaItem[] = [
       },
       {
         name: "DASSAULT SYSTEMES",
-        logo: "/images/dassault-logo.jpg",
+        logo: "/images/3ds.png",
         panelist: {
           name: "Marion JULLIEN",
           role: "Strategic Client Insights & Data Leader"
