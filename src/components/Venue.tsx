@@ -10,7 +10,7 @@ const Venue = () => {
 
         {/* RIGHT TEXT */}
         <div className="about-wids-content">
-          <h2>About WiDS Paris @ Emlyon</h2>
+          <h2>About WiDS Paris @ emlyon</h2>
 
           <p>
             WiDS Paris @emlyon is an independent event organized by emlyon,
