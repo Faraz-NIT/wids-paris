@@ -7,12 +7,19 @@ const Hero = () => {
 
         <div className="hero-content">
           <h1>WiDS @ emlyon Paris</h1>
-          <h2>10th February 2026 | emlyon business school</h2>
+          <h2>
+  10th February 2026 | emlyon business school |
+  <a 
+    href="https://maps.app.goo.gl/BHVtt1hfcwiEYtih7"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    15 Boulevard Diderot, 75012 Paris
+  </a>
+</h2>
+
           <p>
-            Cultivating the next generation of Data Science and AI leaders by
-            providing resources for upskilling, networking, mentorship, and
-            growth opportunities—from students to professionals.
-          </p>
+Join our event that fosters a vibrant and inclusive data science community - bringing together students, professionals, researchers, data science enthusiasts, and people considering a career transition into data at any stage of their journey to advance knowledge and innovation in the field.          </p>
 
           <div className="hero-cta">
             <button
