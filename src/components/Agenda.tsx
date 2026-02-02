@@ -40,6 +40,12 @@ type AgendaItem =
 
 const agendaItems: AgendaItem[] = [
   {
+    time: "Introduction",
+    logo: "/images/ib.png",
+    speaker: "Imène Brigui",
+    role: "Welcome word by Ambassador - WIDS Paris "
+  },
+  {
     time: "5:00 – 5:20 pm",
     logo: "/images/sfr-logo.png",
     speaker: "Pauline de Malherbe",
