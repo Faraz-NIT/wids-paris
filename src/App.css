@@ -5,13 +5,14 @@
 }
 @media (max-width: 768px) {
     .navbar {
-      justify-content: left;
-      padding-right: 0;
-      padding-left: 5px;
+     
+      margin-left: 0;
+      translate: -120px;
+      
     }
   .logo-row {
     position: static;
-    justify-content: center;
+    justify-content: left;
     left: -10px;
     width: 100%;
     margin: 0 auto 1rem auto;
