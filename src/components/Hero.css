@@ -1,8 +1,26 @@
+ 
 @media (max-width: 768px) {
-  .hero-content {
-    margin-top: 700px;
+  .footer-section h3:contains('Venue'),
+  .footer-section p:contains('Emlyon Business School, 15 Boulevard Diderot, 75012 Paris') {
+    margin-top: 100px;
   }
 }
+@media (max-width: 768px) {
+  .hero-content {
+    margin-top: 350px;
+     /* Reduce all text size by 20% */
+  }
+  .hero-content h1 {
+    font-size: 2.4rem !important;
+  }
+  .hero-content h2 {
+    font-size: 1.2rem !important;
+  }
+  .hero-content p {
+    font-size: 0.84rem !important;
+  }
+}
+
 /* ==================== HERO ==================== */
 .hero {
   position: relative;
