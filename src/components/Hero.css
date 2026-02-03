@@ -12,7 +12,7 @@
     margin: 0 auto;
     display: block;
     font-size: 0.7rem;
-    margin-top: 0.15rem;
+    margin-top: -40px;
   }
 }  
 @media (max-width: 768px) {
