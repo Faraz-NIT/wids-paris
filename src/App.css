@@ -1,4 +1,48 @@
 @media (max-width: 768px) {
+  .schedule-card-hover .hover-text {
+    font-size: 0.72rem;
+  }
+}
+@media (max-width: 768px) {
+    .nav-container {
+      justify-content: center;
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  .logo-row {
+    position: static;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 200px;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: row !important;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
   .hero {
     margin-bottom: 2.5rem !important;
   }
