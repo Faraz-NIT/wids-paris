@@ -1,3 +1,16 @@
+  .hero-cta {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .btn-register {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
  
 @media (max-width: 768px) {
   .footer-section h3:contains('Venue'),
