@@ -6,8 +6,13 @@
   }
 }
 @media (max-width: 768px) {
+  .hero-mosaic {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
   .hero-content {
-    margin-top: 350px;
+    margin-top: 300px;
      /* Reduce all text size by 20% */
   }
   .hero-content h1 {
