@@ -28,7 +28,7 @@
 }
 @media (max-width: 768px) {
   .hero-content {
-    margin-top: 300px;
+    margin-top: 400px;
      /* Reduce all text size by 20% */
   }
   .hero-content h1 {
