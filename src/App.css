@@ -10,10 +10,9 @@
 }
 @media (max-width: 768px) {
     .navbar {
-     
       margin-left: 0;
-      translate: -120px;
-      
+      transform: none;
+      width: 100%;
     }
   .logo-row {
     position: static;
@@ -35,7 +34,8 @@
     width: 100%;
     gap: 0.5rem;
     margin-top: 200px;
-    margin-left: 150px;
+    margin-left: 0;
+    padding: 0;
   }
 }
 @media (max-width: 768px) {
