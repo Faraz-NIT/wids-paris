@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .nav-menu {
-    gap: 2rem !important;
+    gap: 1.7rem !important;
   }
   .nav-menu li {
     margin-bottom: 0;
@@ -42,7 +42,7 @@
     width: 100%;
     gap: 0.5rem;
     margin-top: 200px;
-    margin-left: 50px;
+    margin-left: 40px;
     padding: 0;
   }
 }
