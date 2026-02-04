@@ -17,7 +17,7 @@
   .logo-row {
     position: static;
     justify-content: left;
-    left: -7px;
+    left: -3px;
     width: 100%;
     margin: 0 auto 1rem auto;
     display: flex;
@@ -34,7 +34,7 @@
     width: 100%;
     gap: 0.5rem;
     margin-top: 200px;
-    margin-left: 45px;
+    margin-left: 50px;
     padding: 0;
   }
 }
