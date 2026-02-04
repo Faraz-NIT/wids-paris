@@ -23,6 +23,7 @@
 }
 @media (max-width: 768px) {
   .nav-menu {
+    list-style: none;
     flex-direction: column !important;
     align-items: center;
     justify-content: flex-start;
@@ -34,6 +35,7 @@
 }
 @media (max-width: 768px) {
   .nav-menu {
+    list-style: none;
     flex-direction: row !important;
     overflow-x: auto;
     white-space: nowrap;
