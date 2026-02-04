@@ -1,4 +1,12 @@
 @media (max-width: 768px) {
+  .nav-menu {
+    gap: 2rem !important;
+  }
+  .nav-menu li {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
   .nav-menu li a {
     font-size: 1.10rem !important;
   }
