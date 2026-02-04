@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+  .nav-menu li a {
+    font-size: 1.10rem !important;
+  }
+}
+@media (max-width: 768px) {
   .schedule-card-hover .hover-text {
     font-size: 0.72rem;
   }
