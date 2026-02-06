@@ -144,7 +144,7 @@ I’m a senior data scientist with over 4 years of experience in the gaming indu
             <p className="speaker-role"> Director of Experience and Client Relations at Suez</p>
             <div className="schedule-card-hover">
               <h3>About</h3>
-              <p className="hover-text">
+              <p className="hover-text" style={{ fontSize: "0.85rem", lineHeight: "1.4" }}>
 Bianca Roatis has been Director of Customer Relations, Experience, and Data at Suez Recycling and Recovery France since 2022. With over 18 years of experience in B2B sectors such as environment, construction, and investment banking, she began her career in customer relations and data at Renault. Her expertise focuses on customer experience, digital, and data. At SUEZ, she leads the customer experience roadmap, digitalization , and customer service, notably improving customer satisfaction and promoted a customer-centric culture.</p>
               
             </div>
