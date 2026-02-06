@@ -54,8 +54,8 @@ const agendaItems: AgendaItem[] = [
   {
     time: "5:20 – 5:40 pm",
     logo: "/images/artefact-logo.jpg",
-    speaker: "Justine Nerce",
-    role: "CEO and alumna of the school"
+    speaker: "Marine Sortais",
+    role: "Data Consulting Director"
   },
   {
     time: "5:40 – 6:10 pm",

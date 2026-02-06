@@ -109,9 +109,9 @@ function App() {
         <div className="time-header">2nd Conference</div>
         <div className="schedule-cards-row speaker-row-with-keynote">
           <div className="schedule-card">
-            <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/justine.jpg)'}}></div>
-            <p className="speaker-name">Justine Nerce</p>
-            <p className="speaker-role">CEO at ARTEFACT</p>
+            <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/soratis.png)'}}></div>
+            <p className="speaker-name">Marine Sortais</p>
+            <p className="speaker-role">Data Consulting Director at ARTEFACT</p>
             <div className="schedule-card-hover">
               <h3>About</h3>
               <p className="hover-text">
@@ -155,8 +155,7 @@ Bianca Roatis has been Director of Customer Relations, Experience, and Data at S
             <p className="speaker-role">Head of AI, Governance at AXA</p>
             <div className="schedule-card-hover">
               <h3>About</h3>
-              <p className="hover-text">
-              </p>
+              <p className="hover-text"> A researcher at Telecom Paris specializing in Signal and Image Processing, she currently serves as Acting Head of Data Science at Accor Paris. Balancing scientific research with entrepreneurial practice, Cristina is recognized for impactful contributions in Computer Vision and Signal Processing, with a strong focus on translating research into durable, sustainable products. Her work exemplifies the synergy between academic insight and real-world innovation in AI and data science.</p>
               
             </div>
           </div>
