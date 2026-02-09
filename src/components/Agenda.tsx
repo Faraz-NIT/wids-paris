@@ -103,7 +103,7 @@ const agendaItems: AgendaItem[] = [
   },
   {
     time: "6:30 – 7:00 pm",
-    speaker: "SFR Data Challenge Award Ceremony"
+    speaker: "Data Challenge award ceremony, SFR"
   },
   {
     time: "7:00 – 8:30 pm",
