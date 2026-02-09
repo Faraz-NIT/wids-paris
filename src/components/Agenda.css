@@ -97,7 +97,17 @@
 .agenda-card-header {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   gap: 1.5rem;
+}
+
+.agenda-logos-inline {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 1.5rem;
+  margin-right: 0;
 }
 
 /* ==================== SINGLE LOGO ==================== */
