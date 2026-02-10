@@ -108,18 +108,22 @@ function App() {
       <div className="schedule-time-slot">
         <div className="time-header">2nd Conference</div>
         <div className="schedule-cards-row speaker-row-with-keynote">
-          <div className="schedule-card">
+          <div className="schedule-card center-photo">
             <div className="speaker-avatar-circle" style={{backgroundImage: 'url(/images/soratis.png)'}}></div>
             <p className="speaker-name">Marine Sortais</p>
             <p className="speaker-role">Data Consulting Director at ARTEFACT</p>
             <div className="schedule-card-hover">
               <h3>About</h3>
-              <p className="hover-text">
+              <p className="hover-text"> Marine Sortais is a Consulting Director at Artefact with 8 years of experience in data consulting, specializing in Data Strategy, AI transformation, and Data Governance across healthcare, banking, and telecommunications sectors. Marine's work focuses on implementing practical frameworks that ensure fairness, transparency, and accountability throughout the AI lifecycle, from strategy to deployment.
               </p>
               
             </div>
           </div>
-          
+          <div className="keynote-card">
+            <div className="keynote-label">Keynote</div>
+            <div className="keynote-title">Building trustworthy AI systems in an era where performance without trust creates systemic risk</div>
+            <div className="keynote-desc"> I explore how fairness, transparency, and robustness can be measured and ensured across the AI lifecycle, demonstrating practical bias-mitigation methods and stressing that responsibility starts long before the first line of code. Drawing from real-world banking applications, I challenge the audience with a clear message: to lead in AI, we must question black-box models and build systems that don’t just work—but deserve trust.</div>
+          </div>
         </div>
       </div>
 
